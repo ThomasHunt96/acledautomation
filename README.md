@@ -1,4 +1,4 @@
-## Automation script for processing of ACLED .csv files from [ACLED Data](https://acleddata.com/data-export-tool/)
+## Automation script for processing ACLED .csv files
 
 ### Prerequisites:
 Python 3.6+,
