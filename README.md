@@ -1,12 +1,19 @@
 ## Automation script for processing ACLED .csv files
 
+## Getting Started:
+
 ### Prerequisites:
-Python 3.6+,
-Pandas 1.0,
-A csv file from [Acled Data](https://acleddata.com/data-export-tool/)
+* Python 3.6+,
+* Pandas 1.0,
+* A csv file from [Acled Data](https://acleddata.com/data-export-tool/)
+  
+### Overview
 
-
-Essentially this script performs the following; removes uncecessary columns, calculates a conflict date from "event_date", removes  duplicate admin2 rows by first occurence or highest fatalities, exports the processed data to a new csv file.
+Essentially this script performs the following: 
+* Removes uncecessary columns, 
+* Calculates a conflict date from "event_date", 
+* Removes  duplicate admin2 rows by first occurence or highest fatalities, 
+* Exports the processed data to a new csv file.
 
 Run in command line, direct the program to enter the path to an ACLED.csv file.
 
@@ -17,7 +24,7 @@ Then you choose to filter out duplicate admin2s. Currently there are two filters
 
 Data is exported to a csv file in the following format:
 ![image of table](https://i.ibb.co/nnp6kZz/Screenshot-2020-04-25-Tom-Automation-tasks.png)
-
+'''
 
 If you find any issues or have any improvements that can be made please raise them in the repo, and I'll see to them asap!
 
