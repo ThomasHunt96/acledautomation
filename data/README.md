@@ -1,1 +1,1 @@
-Here is some ACLED data for testing the functionality of thescript
+Here is some ACLED data for testing purposes
