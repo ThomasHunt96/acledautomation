@@ -1,1 +1,23 @@
-Automation for ACLED Data
+Automation script for processing of ACLED .csv files from https://acleddata.com/data-export-tool/
+
+Prerequisites:
+Python 3.6+,
+Pandas 1.0,
+A csv file from https://acleddata.com/data-export-tool/
+
+Essentially this script performs the following; removes uncecessary columns, calculates a conflict date from "event_date", filters out duplicate admin2s by first occurence or highest fatalities, exports the processed data to a new csv file.
+
+
+Run in command line, direct the program to enter the path to an ACLED.csv file.
+
+You will be prompted to enter a 'start date' (in dd-mm-yyyy format), which will be used to calculate a conflict_date an integer calculated by days between the start date and 'event_date'. conflict_date replaces 'event_date' in the csv file.
+
+Then you choose to filter out duplicate admin2s. Currently there are two filters: First occurence, which keeps the row of the first occurence of each admin2. Highest fatalities keeps the row with the highest fatalities for each admin2.
+
+If you find any issues or have any improvements that can be made please raise them in the repo.
+
+
+
+
+
+
