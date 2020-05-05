@@ -158,7 +158,7 @@ def main():
     # Exporting CSV to locations.csv
     output_df = df[['location', 'admin1', 'country', 'latitude', 'longitude', 'conflict_date']]
     output_df.rename(columns={'location': 'name', 'admin1': 'reigon'}, inplace=True)
-    output_df["location_type"] = "conflict"
+    output_df["location_type"] = "conflict_zone"
     output_df["population"] = "null"
 
     output_path = input("Enter output filename...\n") + ".csv"
